@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Products</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+header{
+ background-color:#030303;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(253, 250, 250);
+  border: 10px solid greenyellow;
+
+}
+
+button{
+ background-color:#030303;
+ color: white;
+
+
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+
+<header>
+    <h2>Products</h2>
+</header>
+<body>
+<div class="row">
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.rtings.com/assets/pages/6S2WXjTl/best-laptop-medium.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Laptop</h1>
+      <p>Dell</p>
+      <p>Price : $3000</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+  </div>
+ <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://5.imimg.com/data5/BB/FR/MY-38642031/wifi-enabled-complete-set-of-dell-optiplex-dual-core-windows-10-desktop-pc-computer-500x500.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Computer</h1>
+      <p>WiFi Enabled Complete Set Of Dell OptiPlex Dual Core Windows 10 Desktop PC Computer, RAM: 4GB</p>
+      <p>Price : $1000</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://media.itpro.co.uk//image/upload/f_auto,t_primary-image-desktop@1/v1634892050/itpro/2021/10/Shutterstock_IBM_Personal_Computer.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1> IBM Personal Computer </h1>
+      <p>The industry-creating IBM Personal Computer 5150 turned 40 this year. To mark the occasion, we reveal the story of its birth – and destroy one long-running myth in the process</p>
+      <p>Price : $100</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
